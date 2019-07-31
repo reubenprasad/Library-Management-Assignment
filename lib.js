@@ -14,7 +14,7 @@ $(document).ready(function(){
                      output+="<tr><td>"+data[i].id+"</td>"
                      output+="<td>"+data[i].title+"</td>";
                      output+="<td>"+data[i].author+"</td>";
-                     output+="<td><img src='"+data[i].image+"'></td>";
+                     output+="<td><img src='"+data[i].image+"' height='150' width='150'></td>";
                      output+="<td>"+data[i].category+"</td>";
                      output+="<td>"+data[i].price+"</td></tr>";                                    
                }
