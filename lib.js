@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $("#sel").hide();
     $("#t1").click(function(){
         
         $.ajax({
