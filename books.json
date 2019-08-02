@@ -3,7 +3,7 @@
         "title":"Broad Band",
         "id":"1",
         "author":"Claire L. Evans",
-        "price":1,
+        "price":"10 $",
         "category":"Science",
         "image":"Broad Band - Science.jpg"
     },
@@ -11,7 +11,7 @@
         "title":"Spying on Whales",
         "id":"2",
         "author":"Nick Pyenson",
-        "price":1,
+        "price":"20 $",
         "category":"Science",
         "image":"Spying on Whales - Science.jpg"
     },
@@ -19,7 +19,7 @@
         "title":"The Last Black Unicorn",
         "id":"3",
         "author":"Tiffany Haddish",
-        "price":1,
+        "price":"30 $",
         "category":"Humor",
         "image":"TheLastBlackUnicorn-Humor.jpg"
     },
@@ -27,7 +27,7 @@
         "title":"Calypso",
         "id":"4",
         "author":"David Sedaris",
-        "price":1,
+        "price":"15 $",
         "category":"Humor",
         "image":"Calypso-Humor.jpg"
     },
@@ -35,7 +35,7 @@
         "title":"Year One",
         "id":"5",
         "author":"Nora Roberts",
-        "price":1,
+        "price":"9 $",
         "category":"Fantasy",
         "image":"Year One - Fantasy.jpg"
     },    
@@ -43,7 +43,7 @@
         "title":"Circe",
         "id":"6",
         "author":"Madeline Miller",
-        "price":1,
+        "price":"19 $",
         "category":"Fantasy",
         "image":"Circe - Fantasy.jpg"
     }, 
@@ -51,7 +51,7 @@
         "title":"Elevation",
         "id":"7",
         "author":"Stephen King",
-        "price":1,
+        "price":"49 $",
         "category":"Horror",
         "image":"Elevation - Horror.jpg"
     }, 
@@ -59,7 +59,7 @@
         "title":"Baby Teeth",
         "id":"8",
         "author":"Zoje Stage",
-        "price":1,
+        "price":"32 $",
         "category":"Horror",
         "image":"Baby Teeth - Horror.jpg"
     }, 
@@ -67,7 +67,7 @@
         "title":"The Poet X",
         "id":"9",
         "author":"Elizabeth Acevedo",
-        "price":1,
+        "price":"20 $",
         "category":"Poetry",
         "image":"The Poet X- Poetry.jpg"
     }, 
@@ -75,7 +75,7 @@
         "title":"Useless Magic",
         "id":"10",
         "author":"Florence Welch",
-        "price":1,
+        "price":"22 $",
         "category":"Poetry",
         "image":"Useless Magic - Poetry.jpg"
     }, 
@@ -83,7 +83,7 @@
         "title":"Us Against You",
         "id":"11",
         "author":"Fredrick Backman",
-        "price":1,
+        "price":"16 $",
         "category":"Fiction",
         "image":"UsAgainstYou-fiction.jpg"
     }, 
@@ -91,7 +91,7 @@
         "title":"Still me",
         "id":"12",
         "author":"Jojo Moyes",
-        "price":1,
+        "price":"13 $",
         "category":"Fiction",
         "image":"Stillme-fiction.jpg"
     } 
