@@ -1,7 +1,13 @@
 $(document).ready(function(){
 
     $("#sel").hide();
-    $("#t1").click(function(){
+    $("#reg").hide();
+    $("#t2").click(function(){
+        $("#result").show();
+        $("#login").hide();
+        $("#log").hide();
+        $("#sel").hide();
+        $("#reg").hide();
         $.ajax({
             type:"GET",
             url:"books.json",
@@ -24,6 +30,10 @@ $(document).ready(function(){
         });
     });
     $("#category").change(function(){
+        $("#result").show();
+        $("#login").hide();
+        $("#log").hide();
+        $("#sel").hide();
         var category = $("#category").val();
         if(category == "Category")
         $("#sel").show();
@@ -52,6 +62,69 @@ $(document).ready(function(){
             }
         });
         
+    });
+
+    $("#t1").click(function(){
+        $("#result").hide();
+        $("#login").show();
+        $("#log").show();
+        $("#sel").hide();
+        $("#reg").hide();
+    });
+
+    $("#lgbtn").click(function(){
+        var un = $("#un").val();
+        var pw = $("#pw").val();
+        var regexUn = /^[a-zA-Z ]{1,32}$/;
+        var regexPw = /^[a-zA-Z0-9]{1,32}$/;
+        if( (un.length!=0 && regexUn.test(un)) && (pw.length!=0 && regexPw.test(pw)) )
+        {
+            $("#result").show();
+            $("#login").hide();
+            $("#user").text("Logged in as : "+un);
+            $("#user").show();
+        }
+        else
+        {   if(un.length == 0 || pw.length == 0)
+            alert("Username and Password cannot be empty");
+            if((!regexUn.test(un)) || (!regexPw.test(pw)) )
+            alert("Please enter Username and Password in the correct format")
+        }
+    });
+
+    $("#rgbtn").click(function(){
+        var un = $("#unr").val();
+        var pw = $("#pwr").val();
+        var cpw = $("#cpwr").val();
+        var regexUn = /^[a-zA-Z ]{1,32}$/;
+        var regexPw = /^[a-zA-Z0-9]{1,32}$/;
+        if( (un.length!=0 && regexUn.test(un)) && (pw.length!=0 && regexPw.test(pw)) && pw == cpw )
+        {
+            alert("Successfully Registered your account");
+            $("#login").show();
+            $("#log").show();
+            $("#reg").hide();
+            
+        }
+        else
+        {   if(un.length == 0 || pw.length == 0)
+            alert("Username and Password cannot be empty");
+            if((!regexUn.test(un)) || (!regexPw.test(pw)) )
+            alert("Please enter Username and Password in the correct format")
+            if(!(pw == cpw))
+            alert("Confirmed Password does not match");
+        }
+    });
+
+    $("#t3").click(function(){
+        $("#result").hide();
+        $("#sel").hide();
+        $("#reg").show();
+        $("#r").show();
+        $("#log").hide();
+        $("#login").hide();
+        $("#user").hide();
+
     });
 
 });

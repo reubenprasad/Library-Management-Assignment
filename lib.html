@@ -10,13 +10,18 @@
     
     <link rel="stylesheet" href="./lib.css">
 </head>
-<body>
+<body style="background-color: rgb(194, 220, 255)">
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-center col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 nav" id="menu">
                 <ul class="navbar-nav">
-                  
                   <li class="nav-item" style="border:solid rgb(93, 92, 92) 2px; margin-right: 20px; text-align: center; width: 100px">
-                    <a class="nav-link" href="#sel" id="t1">Books</a>
+                    <a class="nav-link" href="#log" id="t1">Login</a>
+                  <li class="nav-item" style="border:solid rgb(93, 92, 92) 2px; margin-right: 20px; text-align: center; width: 100px">
+                    <a class="nav-link" href="#menu" id="t3">Register</a>
                   </li>
+                  <li class="nav-item" style="border:solid rgb(93, 92, 92) 2px; margin-right: 20px; text-align: center; width: 100px">
+                    <a class="nav-link" href="#menu" id="t2">Books</a>
+                  </li>
+                  
                   
                   <select class="form-control"id="category">
                       <option>Category</option>
@@ -29,8 +34,66 @@
                   </select>
                 </ul>
               </nav>
+              
                 <br>
+                
+                <p style="font-size: 18px; text-align: right; color: rgb(3, 136, 3); margin-right: 5px" id="user"></p>
                 <p style="font-size: 30px; text-align: center" id="sel">Select a Category</p>
+                <div id="login">
+                        <div class="container">
+                                <div class="row">
+                                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                            <p style="font-size: 30px; text-align: center" id="log">Login</p>
+                                        <table class="table" style="width: 600px; margin:auto;">
+                                            <tr>
+                                                <td>Username :</td>
+                                                <td><input type="text" class="form-control" id="un" placeholder="Enter Username"></td>
+                                            </tr>
+                        
+                                            <tr>
+                                                <td>Password :</td>
+                                                <td><input type="password" class="form-control" id="pw" placeholder="Enter Password"></td>
+                                            </tr>
+                        
+                                            <tr style="text-align: right">                        
+                                                <td><button class="btn btn-success" id="lgbtn" style="width: 150px">Login</button></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                <div id="reg">
+                        <div class="container">
+                                <div class="row">
+                                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                            <p style="font-size: 30px; text-align: center" id="r">Register</p>
+                                        <table class="table" style="width: 600px; margin:auto;">
+                                            <tr>
+                                                <td>Username :</td>
+                                                <td><input type="text" class="form-control" id="unr" placeholder="Enter Username"></td>
+                                            </tr>
+                        
+                                            <tr>
+                                                <td>Password :</td>
+                                                <td><input type="password" class="form-control" id="pwr" placeholder="Enter Password"></td>
+                                            </tr>
+
+                                            <tr>
+                                                    <td>Confirm Password :</td>
+                                                    <td><input type="password" class="form-control" id="cpwr" placeholder="Confirm Password"></td>
+                                                </tr>
+                        
+                                            <tr style="text-align: right">                        
+                                                <td><button class="btn btn-success" id="rgbtn" style="width: 150px">Register</button></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
                 <div id="result">
 
                 </div>
