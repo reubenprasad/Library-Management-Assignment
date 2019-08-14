@@ -101,9 +101,9 @@ $(document).ready(function(){
         var cpw = $("#cpwr").val();
         var regexUn = /^[a-zA-Z ]{1,32}$/;
         var regexPw = /^[a-zA-Z0-9]{1,32}$/;
-        var regexMb = /^[789]\d{9}$/;
+        var regexMb = /^[6789]\d{9}$/;
         var regexEm = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/; 
-        if( (un.length!=0 && regexUn.test(un)) && (pw.length!=0 && regexPw.test(pw)) && pw == cpw && mb.length!=0 && em.length!=0 && nm.lenght!=0 && regexUn.test(nm))
+        if( (un.length!=0 && regexUn.test(un)) && (pw.length!=0 && regexPw.test(pw)) && pw == cpw && mb.length!=0 && em.length!=0 && nm.lenght!=0 && regexUn.test(nm) && regexMb.test(mb) && regexEm.test(em))
         {
             alert("Successfully Registered your account");
             $("#login").show();
@@ -116,10 +116,16 @@ $(document).ready(function(){
             alert("Name/Username/Password cannot be empty");
             else if(mb.length == 0 || em.length == 0)
             alert('Mobile/Email cannot be empty');
-            else if((!regexUn.test(un)) || (!regexPw.test(pw)) || (!regexUn.test(nm)))
-            alert("Please enter Name/Username/Password in the correct format")
-            else if((!regexMb.test(mb)) || (!regexEm.test(em)))
-            alert("Please enter Mobile/Email in the correct format");
+            else if((!regexUn.test(nm)))
+            alert("Please enter Name in the correct format")
+            else if((!regexUn.test(un)))
+            alert("Please enter Username in the correct format")
+            else if((!regexPw.test(pw)))
+            alert("Please enter Password in the correct format")
+            else if((!regexMb.test(mb)))
+            alert("Please enter Mobile Number in the correct format");
+            else if((!regexEm.test(em)))
+            alert("Please enter a valid Email address");
             else if(!(pw == cpw))
             alert("Confirmed Password does not match");
             else 
