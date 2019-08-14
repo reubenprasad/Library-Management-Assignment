@@ -101,6 +101,8 @@ $(document).ready(function(){
         var cpw = $("#cpwr").val();
         var regexUn = /^[a-zA-Z ]{1,32}$/;
         var regexPw = /^[a-zA-Z0-9]{1,32}$/;
+        var regexMb = /^[789]\d{9}$/;
+        var regexEm = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/; 
         if( (un.length!=0 && regexUn.test(un)) && (pw.length!=0 && regexPw.test(pw)) && pw == cpw && mb.length!=0 && em.length!=0 && nm.lenght!=0 && regexUn.test(nm))
         {
             alert("Successfully Registered your account");
@@ -116,6 +118,8 @@ $(document).ready(function(){
             alert('Mobile/Email cannot be empty');
             else if((!regexUn.test(un)) || (!regexPw.test(pw)) || (!regexUn.test(nm)))
             alert("Please enter Name/Username/Password in the correct format")
+            else if((!regexMb.test(mb)) || (!regexEm.test(em)))
+            alert("Please enter Mobile/Email in the correct format");
             else if(!(pw == cpw))
             alert("Confirmed Password does not match");
             else 
